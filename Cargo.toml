@@ -1,15 +1,17 @@
 [package]
-authors = ["{{authors}}"]
 edition = "2018"
 readme = "README.md"
-name = "{{project-name}}"
+name = "cortex-m-quickstart"
 version = "0.1.0"
 
 [dependencies]
-cortex-m = "0.6.0"
-cortex-m-rt = "0.6.10"
-cortex-m-semihosting = "0.3.3"
-panic-halt = "0.2.0"
+#cortex-m = "0.6.0"
+#cortex-m-rt = "0.6.10"
+#cortex-m-semihosting = "0.3.3"
+#panic-halt = "0.2.0"
+
+# It doesn't work with or without this.
+# panic-abort = "0.3.2"
 
 # Uncomment for the panic example.
 # panic-itm = "0.4.1"
@@ -26,7 +28,7 @@ panic-halt = "0.2.0"
 
 # this lets you use `cargo fix`!
 [[bin]]
-name = "{{project-name}}"
+name = "cortex-m-quickstart"
 test = false
 bench = false
 
